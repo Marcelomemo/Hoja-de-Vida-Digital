@@ -30,7 +30,7 @@
 				<th>Año</th>
 				<th>Institución</th>
 				<th>Lugar</th>
-				<th>Culminó?</th>
+				<th>¿Culminó?</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -67,57 +67,59 @@
 		</tbody>
 	</table>
 
-	<hr/>
-	<h2>Agregar Estudios</h2>
 	<form action="">
-		<p>
-			<label for="recommend">Año: </label>
-			<br>
-			<select name="recommend">
-				<option value="2000">2000</option>
-				<option value="2001">2001</option>
-				<option value="2002">2002</option>
-				<option value="2003">2003</option>
-				<option value="2004">2004</option>
-				<option value="2005">2005</option>
-				<option value="2006">2006</option>
-				<option value="2007">2007</option>
-				<option value="2008">2008</option>
-				<option value="2009">2009</option>
-				<option value="2010">2010</option>
-				<option value="2011">2011</option>
-				<option value="2012">2012</option>
-				<option value="2013">2013</option>
-				<option value="2014">2014</option>
-				<option value="2015">2015</option>
-				<option value="2016">2016</option>
-				<option value="2017">2017</option>
-				<option value="2018">2018</option>
-			</select>
-		</p>
-		<p>
-			<label for="institucion">Institución: </label>
-			<br>
-			<input type="text" name="institucion" placeholder="Nombre Institución" required>
-		</p>		
-		<p>
-			<label for="lugar">Lugar: </label>
-			<br>
-			<input type="text" name="lugar" placeholder="Nombre de la Ciudad" required>
-		</p>		
-		<p>
-			<label for="culmino">Culminó?: </label>
-			<br>
-			<input type="radio" name="culmino"> Si
-			<br>
-			<input type="radio" name="culmino"> No
-		</p>
-		<p>
-			<input type="submit" value="Registrar">
-		</p>
+		<fieldset>
+			<legend><h2>Agregar Estudios</h2></legend>
+		
+			<p>
+				<label for="recommend">Año: </label>
+				<br>
+				<select name="recommend" required>
+					<option value="">--Selecionar--</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+					<option value="2002">2002</option>
+					<option value="2003">2003</option>
+					<option value="2004">2004</option>
+					<option value="2005">2005</option>
+					<option value="2006">2006</option>
+					<option value="2007">2007</option>
+					<option value="2008">2008</option>
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select>
+			</p>
+			<p>
+				<label for="institucion">Institución: </label>
+				<br>
+				<input type="text" name="institucion" placeholder="Nombre de la Institución" required>
+			</p>		
+			<p>
+				<label for="lugar">Lugar: </label>
+				<br>
+				<textarea name="lugar" placeholder="Nombre de la Ciudad" required cols="30" rows="4"> </textarea>
+			</p>		
+			<p>
+				<label for="culmino">¿Culminó?: </label>
+				<br>
+				<input type="radio" name="culmino" required> Si
+				<input type="radio" name="culmino"> No
+			</p>
+			<p>
+				<input type="submit" value="Registrar">
+			</p>
+		</fieldset>
 	</form>
-
-	<hr/>
+	
+	<br/>
 	<footer>
 		@ Derechos Reservados
 	    <ul>
